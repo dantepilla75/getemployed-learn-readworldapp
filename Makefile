@@ -1,6 +1,7 @@
 install:
 	@echo "Installing the application..."
-	# Add installation commands here
+	    pip install --upgrade pip &&\
+			pip install -r requirements.txt	
 
 format:
 	@echo "Formatting code..."
