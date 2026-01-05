@@ -1,8 +1,8 @@
-name: Python application test with Github Actios
+name: Python application test with Github Actions
 on: [push]
 jobs:
   build:
-    runs-on: utuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.12
