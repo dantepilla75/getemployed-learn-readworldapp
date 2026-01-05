@@ -13,7 +13,7 @@ lint:
 
 test:
 	@echo "Running tests..."
-	python -m pytest -vv --cov=mylib test_*.py
+	python -m pytest -vv --cov=mylib  --cov=main test_*.py
 
 build:
 	@echo "Building container..."
