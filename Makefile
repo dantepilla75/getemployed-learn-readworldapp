@@ -15,6 +15,10 @@ test:
 	@echo "Running tests..."
 	# Add testing commands here
 
+build:
+	@echo "Building container..."
+	# Add build commands here
+	
 deploy:
 	@echo "Deploying the application..."
 	# Add deployment commands here
