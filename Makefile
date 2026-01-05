@@ -9,7 +9,7 @@ format:
 
 lint:
 	@echo "Running linter..."
-	# Add linting commands here
+	pylint --disable=R,C *.py mylib/*.py
 
 test:
 	@echo "Running tests..."
