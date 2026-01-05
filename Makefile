@@ -13,12 +13,12 @@ lint:
 
 test:
 	@echo "Running tests..."
-	# Add testing commands here
+	python -m pytest -vv --cov=mylib test_*.py
 
 build:
 	@echo "Building container..."
 	# Add build commands here
-	
+
 deploy:
 	@echo "Deploying the application..."
 	# Add deployment commands here
