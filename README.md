@@ -11,3 +11,4 @@
 2. Create empty files: 'Makefile', 'requirements.txt', 'main.py', 'Dockerfile', 'mylib/__init__.py'
 3. Populate 'MakeFile'
 4. set up Continuous Integration i.e. check for code issues like lint errors
+5. Build cli using Pythin Fire library ./cli-fire.py --help
