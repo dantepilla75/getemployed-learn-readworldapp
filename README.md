@@ -1,3 +1,5 @@
+[![Python application test with Github Actions](https://github.com/dantepilla75/getemployed-learn-readworldapp/actions/workflows/devops.yml/badge.svg)](https://github.com/dantepilla75/getemployed-learn-readworldapp/actions/workflows/devops.yml)
+
 # getemployed-learn-readworldapp
 
 # What all are included in this project
