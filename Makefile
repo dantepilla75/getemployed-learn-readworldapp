@@ -5,7 +5,7 @@ install:
 
 format:
 	@echo "Formatting code..."
-	# Add code formatting commands here
+	black *.py mylib/*.py
 
 lint:
 	@echo "Running linter..."
