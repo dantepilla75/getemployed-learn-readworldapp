@@ -6,3 +6,9 @@ def wiki(name="War Goddess", length=1):
 
     my_wiki = wikipedia.summary(name, length)
     return my_wiki
+
+def search_wiki(name):
+    """Search Wikipedia for Names"""
+
+    search_results = wikipedia.search(name)
+    return search_results
