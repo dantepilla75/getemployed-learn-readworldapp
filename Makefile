@@ -17,7 +17,11 @@ test:
 
 build:
 	@echo "Building container..."
-	# Add build commands here
+	docker build -t deploy-fastapi .
+
+run :
+	@echo "Run docker container..."
+	#docker run -p 127.0.0.1:8080:8080 610f6507c133
 
 deploy:
 	@echo "Deploying the application..."
