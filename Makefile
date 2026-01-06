@@ -2,6 +2,9 @@ install:
 	@echo "Installing the application..."
 	    pip install --upgrade pip &&\
 			pip install -r requirements.txt	
+post-install:
+	@echo "Post installation steps..."
+	python -m textblob.download_corpora
 
 format:
 	@echo "Formatting code..."
@@ -25,8 +28,11 @@ run :
 
 deploy:
 	@echo "Deploying the application..."
-	# Add deployment commands here
+	aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 333723060694.dkr.ecr.ap-south-1.amazonaws.com
+	docker build -t getemployednow/fastapiwiki .
+	docker tag getemployednow/fastapiwiki:latest 333723060694.dkr.ecr.ap-south-1.amazonaws.com/getemployednow/fastapiwiki:latest
+	docker push 333723060694.dkr.ecr.ap-south-1.amazonaws.com/getemployednow/fastapiwiki:latest
 
-all	: install format lint test deploy
+all	: install post-install format lint test deploy
 	@echo "All tasks completed."
 
