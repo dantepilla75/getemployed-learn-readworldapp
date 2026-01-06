@@ -12,6 +12,7 @@ jobs:
     - name: Install dependencies
       run:  |
         make install
+        python -m textblob.download_corpora90i
     - name: Lint with pylink
       run:  |
         make lint
